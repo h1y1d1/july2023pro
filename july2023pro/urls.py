@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from julyapp.views import demo
+from julyapp.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("demo/", demo),
+    path("sss/",studentlist.as_view())
 ]
